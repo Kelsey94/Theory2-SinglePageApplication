@@ -1,8 +1,8 @@
 # Theory 2
 
-> Student Name: **YOUR_NAME**
+> Student Name: Kelsey Richards
 
-![Website Screenshot](./docs/images/preview.png)
+![Website Screenshot](./docs/images/done-screenshot.png)
 
 In this assignment, you will demonstrate your ability to
 

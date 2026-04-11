@@ -1,6 +1,6 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
-import { transformWithEsbuild } from "vite";
+import { transformWithOxc } from "vite";
 import { fileURLToPath, URL } from "node:url";
 
 export default defineConfig({
@@ -13,9 +13,11 @@ export default defineConfig({
           return null;
         }
 
-        return transformWithEsbuild(code, id, {
-          loader: "jsx",
-          jsx: "automatic",
+        return transformWithOxc(code, id, {
+          lang: "jsx",
+          jsx: {
+            runtime: "automatic",
+          },
         });
       },
     },
@@ -33,11 +35,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@test": fileURLToPath(new URL("./test", import.meta.url)),
     },
   },
   test: {
     environment: "jsdom",
-    setupFiles: ["./src/test/setupTests.js"],
+    setupFiles: ["./test/setupTests.js"],
     globals: true,
     css: true,
     restoreMocks: true,

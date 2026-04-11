@@ -10,7 +10,7 @@ export function getWeatherLocationFromProfile(profile) {
     return customLocation;
   }
 
-  const timeZone = profile?.timezone?.zone;
+  const timeZone = profile?.timeZone?.zone || profile?.timezone?.zone;
   if (timeZone && timeZone.includes("/")) {
     const cityFromTimeZone = timeZone.split("/").pop().replace(/_/g, " ");
     if (cityFromTimeZone) {

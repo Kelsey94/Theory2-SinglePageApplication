@@ -45,8 +45,7 @@ describe("getWeatherForProfile", () => {
 
     expect(result).toEqual({
       location: "Edmonton",
-      error:
-        "Add your weather API key in local environment settings to show live weather.",
+      error: "Add your API key in local environment settings to show live weather.",
     });
   });
 
@@ -70,9 +69,9 @@ describe("getWeatherForProfile", () => {
     const result = await getWeatherForProfile(profile, "test-key");
 
     expect(result).toEqual({
-      location: "Edmonton",
-      temperature: 7.4,
-      description: "moderate rain",
+      location: "Edmonton, CA",
+      temperatureC: 7.4,
+      description: "Moderate Rain",
       iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
     });
   });

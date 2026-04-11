@@ -52,7 +52,7 @@
       "imageAlt": "Buy Me a Coffee at ko-fi.com"
     },
     "image": {
-      "src": "/public/me.webp",
+      "src": "/me.webp",
       "alt": "Photo of kelsey"
     }
   },
@@ -64,17 +64,16 @@
       "JavaScript",
       "React",
       "PHP",
-      "CSS",
-      "Nodejs"
+      "CSS"
     ],
-    "passion": "Beyond coding, I'm passionate about music, design, and exploring the latest trends in technology. I believe in continuous learning and am always eager to take on new challenges that allow me to grow both personally and professionally. When i'm done nerding out, you'll find me out with my dog, in the gym, or relaxing at home with a good video game.",
-    "approach": "While I have some preferred tools, I always choose the best one for the job, even if it's not on my usual list. My goal is to find the right solution for each project."
+    "passion": "I'm also passionate about music, design, and exploring the latest trends in technology. In my spare time, you'll find me out in nature with my dog or relaxing at home with a good video game.",
+    "approach": "I believe in continuous learning and I'm always eager to take on new challenges"
   },
   "contacts": {
     "title": "Let's start working together!",
     "contactDetailsTitle": "Contact Details",
     "email": "kelseyrichards@me.com",
-    "location": "Alberta, Canada",
+    "location": "Edmonton, Alberta, Canada",
     "socialsTitle": "Socials",
     "socialLinks": [
       {

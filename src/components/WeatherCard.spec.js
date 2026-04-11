@@ -40,13 +40,13 @@ describe("WeatherCard", () => {
     render(
       createElement(WeatherCard, {
         weather: {
-          location: "Edmonton",
+          location: "Edmonton, CA",
           error: "Unable to load current weather right now",
         },
       })
     );
 
-    expect(screen.getByText("Edmonton")).toBeInTheDocument();
+    expect(screen.getByText("Edmonton, CA")).toBeInTheDocument();
     expect(
       screen.getByText("Unable to load current weather right now")
     ).toBeInTheDocument();

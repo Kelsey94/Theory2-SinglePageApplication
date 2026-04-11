@@ -16,7 +16,7 @@ export default function IntroCard({ intro }) {
     } = intro;
 
     return <Card colSpan="md:col-span-3" rowSpan="md:row-span-5 lg:row-span-5" height="md:min-h-[360px] lg:min-h-[380px]">
-        <div className="flex w-full h-full">
+        <div className="flex w-full  align-items-center">
             <div className="flex flex-col justify-between md:max-h-[300px] gap-4">
                 <div className="flex flex-col h-full">
                     <h6 className="text-sm font-light m-0 text-gray-500">{welcomeLabel}</h6>
@@ -58,10 +58,11 @@ export default function IntroCard({ intro }) {
             </div>
             <Image
                 alt={image.alt}
-                className="w-auto h-[240px] md:h-[300px] lg:h-[300px] md:self-end select-none absolute right-[-110px] bottom-0 z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none"
-                height={300}
+                className="w-[240px] h-[240px] md:w-[300px] md:h-[300px] lg:h-[300px] md:self-end select-none absolute right-[-100px] bottom-0 z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none rounded-100 object-cover"
+                height={1000}
                 src={image.src}
-                width={300}
+                width={1500}
+                loading="eager"
             />
         </div>
     </Card>
